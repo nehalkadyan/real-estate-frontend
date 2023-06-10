@@ -1,0 +1,100 @@
+
+.c-wrapper{
+    background-color: white;
+
+}
+
+.c-container{
+    justify-content: space-between;
+}
+
+
+
+.c-container div{
+    flex: 1;
+}
+
+
+/* .c-right{
+    width: 100%;
+} */
+
+.c-left{
+    gap: 0.5rem;
+}
+
+
+.contactModes{
+    margin-top: 2rem;
+    gap: 1rem;
+    
+    
+}
+
+.contactModes .row{
+   gap: 1.5rem;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mode{
+    width: 16rem;
+    padding: 1rem;
+    border: 0.8px;
+    border-radius: 5px;
+    gap: 1rem;
+    transition: all 300ms ease-in;
+}
+
+.icons{
+    margin-left: -2rem;
+}
+
+.mode .button{
+    width: 100%;
+    background-color: darkred;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.mode > :nth-child(1){
+    width: 100%;
+    gap: 1.6rem;
+}
+
+.mode .detail .primaryText{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.detail{
+    margin-left: -2rem;
+}
+
+.mode:hover{
+    scale: 1.1;
+    box-shadow: var(--shadow);
+}
+
+.mode .button:hover{
+    background-color: rgb(206, 215, 244);
+    color: black;
+}
+
+@media (max-width: 1024px){
+    .c-container{
+        flex-direction: column;
+    }
+
+    .c-right{
+        justify-content: center;
+    }
+
+    .row{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    
+}
